@@ -68,7 +68,15 @@ function convert(arabicNumber) {
 };
 
 document.getElementById('convert').addEventListener('click', function(e) {
+  e.preventDefault(e);
   let number = document.getElementById('toConvert').value;
 
   convert(number);
 })
+
+document.querySelector("#convert").addEventListener("keyup", function(e) {
+  e.preventDefault(e);
+  if(e.key == "Enter") {
+      convert(number);
+  }
+});
