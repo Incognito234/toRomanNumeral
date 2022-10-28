@@ -19,6 +19,7 @@ form {
     height: 50vh;
     margin-inline: auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 2rem;
